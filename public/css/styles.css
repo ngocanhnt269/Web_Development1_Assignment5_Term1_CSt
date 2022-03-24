@@ -1,0 +1,571 @@
+@import url('fonts.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+
+}
+
+a {
+	text-decoration: none;
+	color: blueviolet;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: Lexend;
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-family: Abel;
+	font-size: 1.3rem;
+}
+
+
+h2 {
+	font-family: Abel;
+
+}
+
+button.btn {
+	border: none;
+	border-radius: 1.5rem;
+	padding: 0.8rem 2rem;
+	font-size: 1.1rem;
+	font-family: Livvic;
+	cursor: pointer;
+}
+
+/* --------------- navbar ----------------- */
+
+.nav {
+	background: white;
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 10vh;
+	overflow: hidden;
+	transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+	justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+	position: absolute;
+	top: 0%;
+	width: 90%;
+	cursor: pointer;
+	display: none;
+}
+
+/* .collapse {
+	height: 30rem;
+} */
+
+.nav .toggle-collapse .toggle-icons {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+	font-size: 1.4rem;
+	color: black;
+}
+
+/* .collapse {
+	height: 30rem;
+} */
+
+
+.nav .nav-items {
+	display: flex;
+	margin: 0;
+}
+
+.nav .nav-items .nav-link {
+	padding: 1.6rem 1rem;
+	position: relative;
+	font-family: Abel;
+	font-size: 1.4rem;
+}
+
+.nav .nav-items .nav-link:hover {
+	background-color: lightblue;
+}
+
+.nav .nav-items .nav-link:hover a {
+	color: white;
+}
+
+.nav .nav-brand a {
+	font-size: 2.0rem;
+	padding: 1rem 0;
+	display: block;
+	font-family: Lexend;
+}
+
+.nav .social {
+	padding: 1.4rem 0;
+	font-size: 1.4rem;
+
+}
+
+.nav .social i {
+	padding: 0 .2rem;
+}
+
+.nav .social i:hover {
+	color: #a1c4cf;
+}
+
+/*Main contain*/
+
+main .site-title {
+	background: url(/products/background3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+
+}
+
+main .site-title .site-background {
+	padding-top: 15rem;
+	text-align: center;
+	color: darkcyan;
+}
+
+main .site-title h1, h3 {
+	margin: 0.5rem;
+	font-size: 30px;
+
+}
+
+main .site-title .btn {
+	margin: 1.8rem;
+	background: lightskyblue;
+}
+
+main .site-title .btn:hover {
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 1100px;
+	max-width: 100%;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+
+}
+
+.ajax_content {
+	/* width: 33.3%; */
+	background-color: white;
+	padding: 10px;
+	font-family: Abel;
+	color: seagreen;
+	padding-left: 5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	color: #555;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	grid-gap: 50px;
+	margin: 50px auto;
+	max-width: 1240px;
+	padding: 20px;
+}
+
+.product {
+	padding: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+	width: 100%;
+	display: block;
+}
+
+.product .title {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: lightcoral;
+}
+
+.product .description {
+	padding: 0 20px 20px 20px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.product .material {
+	padding: 0 20px 20px 20px;
+	line-height: 18px;
+}
+
+.product .price {
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+	color: #9b0b03;
+	padding-top: 5px;
+	font-family: sans-serif;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product .cart {
+	text-align: center;
+	padding: 15px 0;
+	margin-top: 20px;
+	background-color: #3e628f;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.product .cart i {
+	padding-left: 10px;
+}
+
+/*Footer*/
+
+footer.footer {
+	height: 100%;
+	background: lightblue;
+	position: relative;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer.footer .bottom {
+	display: grid;
+	grid-template-columns: 40% 30% 30%;
+}
+
+footer.footer .bottom>div {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 0.8rem 3rem;
+	text-align: center;
+}
+
+footer.footer .bottom h2 {
+	color: palevioletred;
+}
+
+footer.footer .bottom p {
+	padding: 10px;
+}
+
+footer.footer .newsletter .form-element {
+	background: white;
+	display: inline-block;
+
+}
+
+footer.footer .follow div i {
+	color: green;
+	padding: 0 0.2rem;
+
+}
+
+footer.footer .rights {
+	justify-content: center;
+	font-family: Josefin;
+	color: peru;
+	padding-bottom: 30px;
+}
+
+
+footer.footer .newsletter .form-element input {
+	padding: .5rem .7rem;
+	border: none;
+	background: transparent;
+	color: white;
+	font-family: Josefin;
+	font-size: 1rem;
+	width: 80%;
+}
+
+
+
+
+/* Viewport less than or equal to 750px*/
+
+@media only screen and (max-width: 750px) {
+	.nav .nav-menu {
+		flex-direction: column;
+	}
+
+	.nav {
+		background: white;
+		padding: 0 2rem;
+		height: 0rem;
+		min-height: 7vh;
+		overflow: hidden;
+		transition: height 1s ease-in-out;
+	}
+
+	.nav .nav-items {
+		flex-direction: column;
+	}
+
+	.nav .toggle-collapse {
+		display: initial;
+	}
+
+	.collapse {
+		height: 30rem;
+	}
+
+	main .site-content {
+		grid-template-columns: 100%;
+	}
+
+
+	main .site-title {
+		background: url(/products/background3.jpg);
+		height: 50vh;
+		display: flex;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		justify-content: center;
+
+	}
+
+	img {
+		display: block;
+		width: fit-content;
+	}
+
+	.container {
+		width: fit-content;
+		max-width: 100%;
+		padding: 50px;
+		margin: 0 auto;
+	}
+
+
+	.wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1em;
+
+	}
+
+
+	main .site-title .site-background {
+		padding-top: 10rem;
+		text-align: center;
+		color: blueviolet;
+	}
+
+	main .site-title h1, h3 {
+		margin: 0.5rem;
+		font-size: 20px;
+	}
+
+
+
+	main .site-title .btn {
+		margin: 1.0rem;
+		background: skyblue;
+	}
+
+	h1 {
+		font-family: Lexend;
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		font-family: Abel;
+		font-size: 1.0rem;
+		font-size: 22px;
+	}
+
+	h2 {
+		font-family: Abel;
+
+	}
+
+	button.btn {
+		border: none;
+		border-radius: 2rem;
+		padding: 0.7rem 1.4rem;
+		font-size: 0.8rem;
+		font-family: Livvic;
+		cursor: pointer;
+	}
+
+
+	.products {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+		grid-gap: 50px;
+		margin: 50px auto;
+		max-width: 1240px;
+		padding: 20px;
+	}
+
+	.product {
+		padding: 10px;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	.product img {
+		width: 100%;
+		display: block;
+
+	}
+
+	.product .title {
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 15px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: darkmagenta;
+	}
+
+	.product .description {
+		padding: 0 20px 20px 20px;
+		line-height: 18px;
+		text-align: justify;
+	}
+
+	.product .material {
+		padding: 0 20px 20px 20px;
+		line-height: 18px;
+	}
+
+	.product .price {
+		text-align: center;
+		font-weight: 600;
+		font-size: 18px;
+		color: #9b0b03;
+		padding-top: 5px;
+		font-family: sans-serif;
+		text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+		/* transform: rotate(-45deg); */
+	}
+
+	.product .cart {
+		text-align: center;
+		padding: 15px 0;
+		margin-top: 20px;
+		background-color: #3e628f;
+		color: white;
+		font-size: 15px;
+		cursor: pointer;
+	}
+
+	.product .cart i {
+		padding-left: 10px;
+	}
+
+
+	footer.footer .bottom {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	footer.footer .bottom>div {
+		flex-basis: 0;
+		padding-top: 0%;
+		text-align: center;
+
+	}
+
+	footer.footer .bottom h2 {
+		color: palevioletred;
+		font-size: 20px;
+	}
+
+	footer.footer .bottom p {
+		padding: 5px;
+	}
+
+	footer.footer .newsletter .form-element {
+		background: white;
+		display: inline-block;
+	}
+
+	footer.footer .follow div i {
+		color: green;
+		padding: 0 0.2rem;
+	}
+
+	footer.footer .rights {
+		justify-content: center;
+		font-family: Josefin;
+		color: peru;
+		padding-bottom: 15px;
+	}
+
+
+
+	footer.footer .newsletter .form-element input {
+		border: none;
+		background: transparent;
+		color: white;
+		font-family: Josefin;
+		font-size: 12px;
+		width: 80%;
+
+	}
+
+
+}

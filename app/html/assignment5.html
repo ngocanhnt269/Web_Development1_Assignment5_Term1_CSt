@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="How to fetch data stored in a json file">
+
+	<link rel="stylesheet" href="/css/styles.css"> 
+	<link rel="stylesheet" href="/css/all.css">
+
+	<!-- Link to my stylesheet -->
+
+	<title>Fetching products from a json file</title>
+</head>
+<body>
+	<!-- Navigation-->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Daisy Muse</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--    Main side-->
+    <main>
+    <section class="site-title">
+        <div class="site-background">
+            <h3>Jewellery and Love </h3>
+            <h1>Discover a world of Jewellery</h1>
+            <button class="btn"> Shop now</button>
+        </div>
+    </section>
+
+    </main>
+
+	<div class="products"></div>
+    <div id="puthere"></div>
+    <div id="content">
+        <div class="ajax_content">
+            <p><b>Click to see details of the top 10 products</b></p>
+            <div id="coursesHTML"></div>
+            <!-- <input id="coursesHTML" type="button" value="Submit"/> -->
+            <!-- <input class="clear" type="button" value="Clear"/> -->
+            <div class="ajax-stuff" id="courses-html"></div>
+        </div>
+        <div class="ajax_content">
+            <p><b>Tips to protect your Jewellery</b></p>
+            <input  id="coursesJSON" type="button" value="Submit"/>
+            <input class="clear" type="button" value="Clear"/>
+            <div class="ajax-stuff" id="courses-json"></div>
+        </div>
+
+    </div>
+
+
+	<footer class="footer">
+        <div class="bottom">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>Daisy muse is a local brand in Vancouver that created by Anh and her team.</p>
+
+            </div>
+
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+    
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2022 All rights reserved | made by Anh
+            </h4>
+        </div>
+
+    </footer>
+
+	<script src="/js/script.js"></script> <!-- link to the javascript file -->
+    <script src="/js/client.js"></script>
+    <script src="/js/Jquery3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
